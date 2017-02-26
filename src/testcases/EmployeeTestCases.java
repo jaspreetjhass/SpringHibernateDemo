@@ -28,6 +28,16 @@ public class EmployeeTestCases {
 		
 	}
 	
+	@Test
+	public void checkemployee()
+	{
+		
+		//Assert.assertNotNull(service.find(5));
+		Assert.assertEquals("Mankirat Singh", service.find(4).getName());
+		
+		
+	}
+	
 	
 	@Test
 	public void employeesame()
@@ -52,7 +62,7 @@ public class EmployeeTestCases {
 		emp1.setHomeAddress(haddr);
 		
 		
-		Assert.assertNull("Object is not null",service.find(4));
+		Assert.assertNull("Object is not null",service.find(5));
 	}
 	
 	
